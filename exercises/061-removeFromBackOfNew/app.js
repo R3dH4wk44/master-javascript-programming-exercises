@@ -1,6 +1,7 @@
 function removeFromBackOfNew(arr) {
   // your code here
-  
+  let arr1 = arr.slice(arr.length);  
+  return arr1;
 }
 
 let arr = [1, 2, 3];
