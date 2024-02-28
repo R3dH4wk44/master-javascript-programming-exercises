@@ -1,6 +1,13 @@
 function getSquaredElementsAtProperty(obj, key) {
     // your code here
-    
+    let array = [];
+    if(!Array.isArray(obj[key])) return [];
+    else{
+      obj[key].forEach(element => {
+        array.push(element * element);
+      });
+      return array;
+    }    
 }
 
 let obj = {
